@@ -5,6 +5,8 @@ i have used localStorage function to make this online notepad project in js.
 
 netlify link
 
+https://nifty-wiles-db744f.netlify.app
+
 
 
 
