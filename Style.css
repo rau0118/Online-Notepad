@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color: #5c004d;
+  color: #fff;
+}
+.container {
+  margin: auto;
+  margin-top: 50px;
+  width: 80vw;
+  /* border: 1px solid black; */
+  min-height: 30vw;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.night{
+  background-color: #ccc;
+  color: #000;
+ 
+}
+
+#mode-icon{
+  font-size: 1.5rem;
+  background: #fff;
+  color: #00002c;
+  padding: 10px;
+  border-radius: 50%;
+
+}
+.header {
+  background-color:lightpink ;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+
+#feature-flag{
+  width: 15px;
+  height: 15px;
+}
+
+.feature {
+  position: absolute;
+  right: 15px;
+}
+
+.input-box #textarea {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 33vw;
+  overflow: scroll;
+  border: none;
+  overflow-x: hidden;
+  border-left: 4px solid green;
+  border-right: 4px solid green;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #00fbcc;
+  background-color: #00002c;
+  resize: none;
+  overflow-y: auto;
+}
+
+#textarea:focus {
+  outline: none;
+}
+.btn-box {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #eef8ff;
+}
+.btn-box input {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
+  background-color: #2da44e;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-box input:hover {
+  background-color: green;
+}
+
+#output-box {
+  padding: 20px;
+  border-left: 4px solid #2da44e;
+  background-color: #ccc;
+  font-size: 1.2rem;
+  display: none;
+}
+.output-heading {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin-top: 50px;
+  }
+  .input-box #textarea {
+    width: 100%;
+    height: 60vh;
+  }
+  .header {
+    font-size: 1.2rem;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-box input {
+    letter-spacing: 0.1em;
+  }
+  #mode-icon{
+    font-size: 0.8rem;
+  }
+}
